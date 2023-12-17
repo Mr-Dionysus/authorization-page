@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI", "Emoji", "Segoe UI Symbol";
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: rgb(246, 244, 244);
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+p {
+    width: 60ch;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    line-height: calc(1ex / 0.32);
+}
+
+.left-img {
+    width: 40%;
+    height: 100vh;
+    background: no-repeat center/130% url("images/left-img.jpg");
+}
+
+.b-logo {
+    width: 100%;
+    height: 300px;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.748);
+}
+
+.img-logo {
+    width: 400px;
+    height: 220px;
+    opacity: 0.8;
+    border-radius: 100px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 0% 40%;
+    object-position: 0% 43%;
+}
+
+.b-authorization {
+    padding-top: 200px;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.b-authorization > .b-upper > h1,
+.b-authorization > .b-upper > h2 {
+    width: 800px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+
+.b-authorization .b-middle {
+    width: 100%;
+    height: 450px;
+    padding: 20px 50px 20px 50px;
+    background: white;
+    box-shadow: 0px 0px 15px 5px rgba(21, 2, 107, 0.171);
+}
+
+.b-authorization .b-middle > h3 {
+    color: rgb(0, 0, 59);
+    margin-bottom: 2%;
+}
+
+.b-authorization .b-middle label {
+    font-weight: 700;
+    color: rgb(0, 0, 59);
+}
+
+.b-authorization .b-middle input {
+    height: 35px;
+    width: 300px;
+    padding: 0px 8px;
+    margin: 5px 0px 20px 0px;
+    border-radius: 5px;
+    border: 1px solid rgba(30, 0, 255, 0.257);
+    transition: border 0.1s, box-shadow 0.3s;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(23, 23, 93);
+}
+
+.b-authorization .b-middle input::-webkit-input-placeholder {
+    font-weight: 400;
+}
+
+.b-authorization .b-middle input::-moz-placeholder {
+    font-weight: 400;
+}
+
+.b-authorization .b-middle input:-ms-input-placeholder {
+    font-weight: 400;
+}
+
+.b-authorization .b-middle input::-ms-input-placeholder {
+    font-weight: 400;
+}
+
+.b-authorization .b-middle input::placeholder {
+    font-weight: 400;
+}
+.b-authorization .b-middle input:focus {
+    outline: none;
+    border: 3px solid rgba(30, 0, 255, 0.588);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.237);
+}
+
+.b-authorization .b-middle input.input-invalid {
+    border: 3px solid rgba(188, 7, 7, 0.508);
+}
+
+.b-middle small {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(188, 7, 7);
+    transition: opacity 0.3s;
+}
+
+.not-visible {
+    opacity: 0;
+}
+
+.b-authorization .b-middle form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.b-middle .form {
+    display: flex;
+    height: 250px;
+}
+
+.b-authorization .b-middle .b-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.b-authorization .b-middle .b-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.b-authorization .b-submit {
+    width: 645px;
+    display: flex;
+    justify-content: center;
+}
+
+.b-authorization .b-submit button {
+    height: 55px;
+    width: 170px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 15px;
+    background: #0868e5;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.211);
+    transition: box-shadow 0.3s;
+}
+
+.b-submit button:hover {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.411);
+}
+
+.b-lower p {
+    padding-left: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0448a1;
+}
+
+footer {
+    align-self: center;
+    margin-top: auto;
+}
