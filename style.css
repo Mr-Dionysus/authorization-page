@@ -195,6 +195,7 @@ h3 {
 .b-lower p {
     padding-left: 50px;
     margin-top: 20px;
+    margin-bottom: 50px;
     font-size: 20px;
     font-weight: 500;
     color: #0448a1;
@@ -205,7 +206,7 @@ footer {
     margin-top: auto;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1233px) {
     body {
         height: auto;
         flex-direction: column;
@@ -231,18 +232,21 @@ footer {
     .b-authorization .b-upper h2 {
         width: 100%;
         font-size: 16px;
-        padding-left: 10px;
+        padding: 0px 50px;
         margin-bottom: 20px;
     }
 
     .b-authorization .b-middle {
-        height: 630px;
+        height: auto;
+        max-height: 630px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .b-middle .form {
-        flex-direction: column;
-        flex-wrap: nowrap;
         height: auto;
+        justify-content: center;
     }
 
     .b-middle form {
@@ -255,5 +259,9 @@ footer {
 
     #btn-submit {
         margin-top: 15px;
+    }
+
+    .b-lower p {
+        width: 100%;
     }
 }
