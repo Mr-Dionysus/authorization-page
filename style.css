@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     background: rgb(246, 244, 244);
+    overflow-x: hidden;
 }
 section {
     display: flex;
